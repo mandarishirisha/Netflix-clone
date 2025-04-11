@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #141414;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Main Section */
+.main {
+  background-image: url("assets/images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 644px;
+  position: relative;
+}
+
+.main .box {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 644px;
+  background-color: black;
+  opacity: 0.69;
+}
+
+/* Navigation */
+nav {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+nav img {
+  width: 130px;
+  position: relative;
+  z-index: 10;
+}
+
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+/* Hero Section */
+.hero {
+  font-family: 'Martel Sans', sans-serif;
+  height: calc(100% - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  color: white;
+  position: relative;
+  padding: 0 30px;
+}
+
+.hero > :nth-child(1) {
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+
+.separation {
+  height: 7px;
+  background-color: red;
+}
+
+/* Buttons */
+.btn {
+  padding: 3px 8px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(248, 243, 243, 0.021);
+  border-radius: 4px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.btn-red {
+  padding: 7px 15px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 400;
+  border: none;
+}
+
+.btn-red-sm {
+  background-color: red;
+  color: white;
+}
+
+/* Hero Input & Button Container */
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.main input {
+  padding: 10px 120px 20px 23px;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+/* Trending Section */
+.first {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.trending-section {
+  width: 100%;
+  padding: 20px 0;
+}
+
+  /* Trending title */
+  .trending-section h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 140px;
+  }
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  gap: 50px;   /* Same as previous on large screens */
+  overflow-x: auto;
+  padding-bottom: 10px;
+  /* For large screens we'll enforce a 1200px width */
+  width: 1200px;
+  margin: auto;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card Styles */
+.card {
+  position: relative;
+  min-width: 170px;
+  max-width: 170px;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  display: block;
+}
+
+.rank {
+  font-size: 90px;
+  position: absolute;
+  bottom: 30px;
+  /* left: 2px; */
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color:white;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Reasons Section */
+.reasons-section {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+}
+
+.reasons-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.reasons-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.reason-card {
+  flex: 1 1 calc(25% - 1rem);
+  background-color: #2d2d2d;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s;
+  min-width: 200px;
+  position: relative;
+  min-height: 215px;
+}
+
+.reason-card:hover {
+  transform: translateY(-4px);
+}
+
+.reason-icon {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  bottom: 7px;
+  right: 7px;
+  margin: 0;
+}
+
+.reason-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.reason-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #ccc;
+}
+
+/* FAQ Section */
+.faq {
+  color: white;
+  padding: 34px 1rem;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+.faq h2 {
+  font-size: 30px;
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-left: 5%;
+}
+
+.faqbox {
+  transition: all 0.3s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 90%;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.faqbox:hover {
+  background-color: #414141;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+/* Extra Section */
+.Extra {
+  font-family: 'Martel Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+  color: white;
+  padding: 1rem;
+}
+
+.Extra input {
+  padding: 10px 120px 20px 23px;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: rgba(23, 23, 23, 0.7);
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+/* Footer */
+footer {
+  max-width: 90%;
+  margin: 2rem auto;
+  padding: 60px 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer .questions {
+  color: rgb(168, 164, 164);
+  padding-bottom: 20px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 150px;
+}
+
+.footer a {
+  font-size: 14px;
+  color: rgb(168, 164, 164);
+  white-space: nowrap;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+
+/* Large screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  nav {
+    max-width: 60%;
+  }
+  /* Maintain original cards container width on large screens */
+  .cards-container {
+    width: 1200px;
+    gap: 50px;
+  }
+}
+
+/* Medium screens (between 768px and 1199px) */
+@media (max-width: 1199px) {
+  /* For the cards container, shift to full width with a reduced gap */
+  .cards-container {
+    width: 100%;
+    gap: 20px;
+    padding: 0 10px;
+  }
+  .reason-card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+  footer {
+    max-width: 90%;
+    padding: 40px 1rem;
+  }
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+  .faq h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-left: 0;
+  }
+}
+
+/* Small screens (max-width: 767px) */
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  .hero > :nth-child(1) {
+    font-size: 32px;
+  }
+  .hero > :nth-child(2),
+  .hero > :nth-child(3) {
+    font-size: 18px;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .cards-container {
+    width: 100%;
+    gap: 10px;
+    padding: 0 10px;
+  }
+  .reason-card {
+    flex: 1 1 100%;
+  }
+  .faqbox {
+    font-size: 20px;
+    padding: 16px;
+    max-width: 100%;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
