@@ -21,13 +21,3 @@ Technologies Used
 HTML5: For structure and content.
 CSS3: For styling and responsive layouts.
 
-Project Structure
-netflix-clone/
-├── assets/
-│   ├── images/
-│   │   ├── bg.jpg
-│   │   ├── logo.svg
-│   │   └── ... (other image assets)
-├── index.html
-├── style.css
-└── README.md
