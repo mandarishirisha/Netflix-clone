@@ -11,6 +11,7 @@ FAQ Section: A list of frequently asked questions presented in an interactive la
 Footer: Contains navigational links and contact information.
 
 Features
+
 Responsive Design: Adapts seamlessly to various screen sizes using CSS media queries.
 Modern UI: Clean and modern UI design inspired by Netflix.
 Interactive Elements: Hover effects and clickable FAQ sections.
